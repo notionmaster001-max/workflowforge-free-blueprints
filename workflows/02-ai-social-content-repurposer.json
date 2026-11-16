@@ -1,0 +1,29 @@
+{
+  "name": "AI Social Content Repurposer",
+  "nodes": [
+    {
+      "name": "Transcript Input",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        100,
+        200
+      ]
+    },
+    {
+      "name": "OpenAI LLM",
+      "type": "n8n-nodes-base.openAi",
+      "position": [
+        300,
+        200
+      ]
+    },
+    {
+      "name": "Format Threads",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        500,
+        200
+      ]
+    }
+  ]
+}

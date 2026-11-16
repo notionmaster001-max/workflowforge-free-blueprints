@@ -1,0 +1,29 @@
+{
+  "name": "Lead Scraper to Sheets & Slack",
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        100,
+        200
+      ]
+    },
+    {
+      "name": "Transform",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        300,
+        200
+      ]
+    },
+    {
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        500,
+        200
+      ]
+    }
+  ]
+}

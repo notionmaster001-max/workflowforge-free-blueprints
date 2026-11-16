@@ -1,0 +1,29 @@
+{
+  "name": "Customer Support Inbound Triage",
+  "nodes": [
+    {
+      "name": "Email Trigger",
+      "type": "n8n-nodes-base.emailReadImap",
+      "position": [
+        100,
+        200
+      ]
+    },
+    {
+      "name": "AI Classifier",
+      "type": "n8n-nodes-base.openAi",
+      "position": [
+        300,
+        200
+      ]
+    },
+    {
+      "name": "Draft Reply",
+      "type": "n8n-nodes-base.gmail",
+      "position": [
+        500,
+        200
+      ]
+    }
+  ]
+}
